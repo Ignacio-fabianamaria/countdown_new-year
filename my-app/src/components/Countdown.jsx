@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+
+
 export default function Countdown() {
 
     const [day, setDay] = useState('00');
@@ -17,7 +19,7 @@ export default function Countdown() {
         const updateCount = () => {
             const currentTime = new Date();
             const subtract = (currentYear - currentTime) / 1000;
-            setDay(Math.floor(subtract/ 3600 / 24));
+            setDay(Math.floor(subtract / 3600 / 24));
             setHour(Math.floor(subtract / 3600) % 24);
             setMin(Math.floor(subtract / 60) % 60);
             setSec(Math.floor(subtract) % 60);
@@ -28,7 +30,13 @@ export default function Countdown() {
     }, [])
 
     return (
-        <section className="countdown">
+        <div className="countdown">
+            <div className="title">
+            <h2>Happy New Year</h2>
+            
+            </div>
+        <section className="countdown-timer">
+            
             <div className="day">
                 <h2>{day}</h2>
                 <p>dias</p>
@@ -45,8 +53,9 @@ export default function Countdown() {
                 <h2>{sec}</h2>
                 <p>segundos</p>
             </div>
+
         </section>
-        
+        </div>
     )
 
 

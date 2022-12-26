@@ -1,31 +1,32 @@
 .container-loading{
+
 width: 200px;
-height: 60px;
+height: 80px;
 position: absolute;
 left: 50%;
 top: 50%;
-transform: translate(-50%, -50%);
+transform: translate(110%, 60%);
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     border-radius: 50%;
-    background-color: #DFB79E;
+    background-color:rgba(218, 176, 5, 0.787);
     left: 15%;
-    transform-origin: 50%;
-    animation: circle .5s alternate infinite ease;
+    transform-origin: 60%;
+    animation: circle .6s alternate infinite ease;
 }
 
 @keyframes circle {
     0%{
-        top:60px;
+        top:70px;
         height: 5px;
         border-radius: 50px 50px 25px 25px;
-        transform: scaleX(1.7);
+        transform: scaleX(1.8);
     }
-    40%{
+    45%{
         height: 20px;
         border-radius: 50%;
         transform: scaleX(1);
@@ -47,17 +48,17 @@ transform: translate(-50%, -50%);
 }
 
 .shadow{
-    width: 20px;
-    height: 4px;
+    width: 30px;
+    height: 8px;
     border-radius: 50%;
     position: absolute;
-    background-color: rgb(220, 91, 81, .5);
-   top: 62%;
+    background-color: rgba(187, 76, 68, 0.26);
+   top: 90%;
    left: 15%;
     transform-origin: 50%;
     z-index: -1;
     filter: blur(1px);
-    animation: shadow .5s alternate infinite ease;
+    animation: shadow .6s alternate infinite ease;
 }
 
 @keyframes shadow{
