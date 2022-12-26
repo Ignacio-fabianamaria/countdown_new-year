@@ -13,6 +13,7 @@ body{
     justify-content:center;
    margin-left: 40%;
     align-items:center;
+    
   }
 
   .title{
@@ -41,12 +42,14 @@ body{
   }
 
   h2{
-    font-size: 4em;
+    font-size: 4.5em;
+    font-family: 'Dancing Script', cursive;
     color: rgba(218, 176, 5, 0.787);
   }
 
 p {
   color: rgba(202, 162, 3, 0.787);
   font-size: 1.5em;
-  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
 }
